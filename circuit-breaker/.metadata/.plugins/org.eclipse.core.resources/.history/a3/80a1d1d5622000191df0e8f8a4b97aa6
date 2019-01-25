@@ -1,0 +1,5 @@
+package com.circuitbreaker.service.helloworldservice.resource;
+
+public class HelloWorldResource {
+
+}

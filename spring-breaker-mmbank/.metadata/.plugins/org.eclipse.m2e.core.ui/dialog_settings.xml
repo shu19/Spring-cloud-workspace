@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Shubham\Spring-boot-workspaces\spring-cloud-mmbank\zuul-proxy"/>
+			<item value="C:\Shubham\Spring-boot-mmbank-eureka-server-centralized-git\website-service"/>
+			<item value="C:\Shubham\Spring-boot-mmbank-eureka-server-centralized-git\transaction-service"/>
+			<item value="C:\Shubham\Spring-boot-mmbank-eureka-server-centralized-git\eureka-service"/>
+			<item value="C:\Shubham\Spring-boot-mmbank-eureka-server-centralized-git\config-service"/>
+			<item value="C:\Shubham\Spring-boot-mmbank-eureka-server-centralized-git\account-service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

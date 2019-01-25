@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="zuul-proxy"/>
+<aop-project name="helloworld-service"/>
+<aop-project name="website-service"/>
+</aop-reference-model>

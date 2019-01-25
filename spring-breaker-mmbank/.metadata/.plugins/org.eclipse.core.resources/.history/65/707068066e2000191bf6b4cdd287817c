@@ -1,0 +1,14 @@
+package com.mm.web.websiteservice.service;
+
+import org.springframework.stereotype.Service;
+
+import com.mm.web.websiteservice.dataset.DataSet;
+
+@Service
+public class BankAppService {
+
+	public DataSet getStatement(int offset, int size) {
+		
+	}
+
+}

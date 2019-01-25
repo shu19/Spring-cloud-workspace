@@ -1,0 +1,5 @@
+package com.circuitbreaker.web.website.service;
+
+public class HelloService {
+
+}

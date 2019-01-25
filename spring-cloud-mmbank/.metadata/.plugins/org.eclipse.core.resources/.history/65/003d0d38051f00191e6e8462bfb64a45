@@ -1,0 +1,5 @@
+package com.mm.web.websiteservice.controller;
+
+public class BankAppController {
+
+}

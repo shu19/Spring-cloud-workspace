@@ -1,0 +1,9 @@
+package com.mm.zuul.helloworldservice;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldService {
+
+	
+}

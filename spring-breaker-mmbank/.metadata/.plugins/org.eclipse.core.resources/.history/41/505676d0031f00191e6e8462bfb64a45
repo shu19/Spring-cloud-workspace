@@ -1,0 +1,5 @@
+package com.mm.web.websiteservice.entity;
+
+public class Transaction {
+
+}

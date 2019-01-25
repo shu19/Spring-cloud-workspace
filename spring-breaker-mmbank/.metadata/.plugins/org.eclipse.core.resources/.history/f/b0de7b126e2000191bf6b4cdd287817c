@@ -1,0 +1,38 @@
+package com.mm.web.websiteservice.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
+import org.springframework.stereotype.Service;
+
+import com.mm.web.websiteservice.controller.BankAppController;
+import com.mm.web.websiteservice.dataset.DataSet;
+import com.mm.web.websiteservice.entity.Transaction;
+
+@Service
+public class BankAppService {
+
+	public DataSet getStatement(int offset, int size) {
+
+		int currentSize = size==0?5:size;
+		int currentOffset = offset==0?1:offset;
+		Link previous = ControllerLinkBuilder.linkTo(ControllerLinkBuilder.methodOn(BankAppController.class).getStatement(currentOffset-currentSize, currentSize)).withRel("previous");
+		Link next = ControllerLinkBuilder.linkTo(ControllerLinkBuilder.methodOn(BankAppController.class).getStatement(currentOffset+currentSize, currentSize)).withRel("next");
+		DataSet dataSet = restTemplate.getForObject("http://ZUUL-SERVICE/transaction/transactions", DataSet.class);
+		List<Transaction> transactionList = dataSet.getTransaction();
+		List<Transaction> transactions = new ArrayList<Transaction>();
+		for(int value=currentOffset-1; value<currentOffset+currentSize-1; value++) {
+			if((transactionList.size() <= value && value > 0) || currentOffset < 1)
+				break;
+			Transaction transaction = transactionList.get(value);
+			transactions.add(transaction);		
+		}
+		dataSet.setPreviousLink(previous);
+		dataSet.setNextLink(next);
+		dataSet.setTransaction(transactions);
+		return dataSet;
+	}
+
+}

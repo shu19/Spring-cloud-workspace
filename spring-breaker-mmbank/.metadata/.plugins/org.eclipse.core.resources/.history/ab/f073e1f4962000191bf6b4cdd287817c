@@ -1,0 +1,84 @@
+package com.mm.web.websiteservice.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.mm.web.websiteservice.dataset.DataSet;
+import com.mm.web.websiteservice.entity.Transaction;
+import com.mm.web.websiteservice.service.BankAppService;
+
+@Controller
+public class BankAppController {
+
+	@Autowired
+	private BankAppService service;
+
+	@RequestMapping("/home")
+	public String home() {
+		return "index";
+	}
+
+	@RequestMapping("/")
+	public String depositForm() {
+		return "DepositForm";
+	}
+
+	@RequestMapping("/deposit")
+	public String deposit(@ModelAttribute Transaction transaction, Model model) {
+		
+		service.deposit(transaction);
+		model.addAttribute("message", "Success!");
+		return "DepositForm";
+	}
+
+	@RequestMapping("/withdraw")
+	public String withdrawForm() {
+		return "WithdrawForm";
+	}
+
+	@RequestMapping(value = "/withdraw", method = RequestMethod.POST)
+	public String withdraw(@ModelAttribute Transaction transaction, Model model) {
+		
+		service.withdraw(transaction);
+		model.addAttribute("message", "Success!");
+		return "WithdrawForm";
+	}
+
+	@RequestMapping("/fundTransfer")
+	public String fundTransfer() {
+		return "FundTransferForm";
+	}
+
+	@RequestMapping(value = "/fundTransfer", method = RequestMethod.POST)
+	public String fundTransfer(@RequestParam("senderAccountNumber") int senderAccountNumber,
+			@RequestParam("receiverAccountNumber") int receiverAccountNumber, @RequestParam("amount") int amount,
+			Model model) {
+
+		service.fundTransfer(senderAccountNumber,receiverAccountNumber,amount);
+		model.addAttribute("message", "Success!");
+		
+		return "FundTransferForm";
+	}
+
+//	@RequestMapping("/statement")
+//	public ModelAndView  statement(Model model) {
+//
+//		ResponseEntity<DataSet> dataset = restTemplate
+//				.getForEntity("http://localhost:9090/transactions?offset=0&size=5", DataSet.class);
+//		model.addAttribute("dataset", dataset.getBody());
+//		return "Statement";
+//	}
+//	
+	@RequestMapping("/statement")
+	public ModelAndView getStatement(@RequestParam("offset") int offset, @RequestParam("size") int size) {
+		DataSet dataSet = service.getStatement(offset, size);
+		return new ModelAndView("Statement", "dataset", dataSet);
+	}
+
+}

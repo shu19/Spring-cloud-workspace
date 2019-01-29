@@ -13,6 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import com.circuitbreaker.web.website.service.HelloService;
 
 @EnableCircuitBreaker
+
 @RestController
 @SpringBootApplication
 public class WebsiteApplication {

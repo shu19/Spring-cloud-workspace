@@ -1,0 +1,8 @@
+package com.mm.web.websiteservice.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class BankAppService {
+
+}

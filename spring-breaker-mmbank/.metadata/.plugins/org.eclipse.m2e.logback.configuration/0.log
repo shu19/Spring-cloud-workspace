@@ -2056,3 +2056,162 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact xmlpull:xmlpu
 2019-01-25 17:19:25,672 [Worker-84: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2019-01-25 17:19:25,674 [Worker-84: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2019-01-25 17:19:25,676 [Worker-84: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-25 17:19:25,676 [Worker-84: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-25 19:40:05,739 [Worker-105: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-25 19:40:05,741 [Worker-105: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-25 19:40:05,743 [Worker-105: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-25 19:40:05,745 [Worker-105: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-25 19:40:05,745 [Worker-105: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-26 13:47:22,247 [Worker-330: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-26 13:47:22,249 [Worker-330: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-26 13:47:22,250 [Worker-330: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-26 13:47:22,252 [Worker-330: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-26 13:47:22,252 [Worker-330: Launching website-service - WebsiteServiceApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:22:07,298 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:22:07,302 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:22:07,304 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:22:07,307 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:22:07,307 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:24:25,671 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:24:25,673 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:24:25,674 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:24:25,677 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:24:25,677 [Worker-823: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:25:21,375 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:25:21,377 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:25:21,378 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:25:21,381 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:25:21,381 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:26:41,387 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:26:41,389 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:26:41,390 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:26:41,392 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:26:41,392 [Worker-820: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:27:13,355 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:27:13,356 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:27:13,358 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:27:13,360 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:27:13,360 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:42:28,923 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:42:28,931 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:42:28,934 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:42:28,937 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:42:28,938 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:42:59,832 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:42:59,835 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:42:59,838 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:42:59,841 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:42:59,841 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:46:38,011 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:46:38,012 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:46:38,014 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:46:38,018 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:46:38,018 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:47:19,644 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:19,645 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:47:19,647 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:47:19,649 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:19,649 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:47:23,769 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:23,771 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:47:23,772 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:47:23,774 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:23,774 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:47:32,537 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:32,539 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:47:32,541 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:47:32,543 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:47:32,544 [Worker-832: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:48:03,688 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:48:03,690 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:48:03,692 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:48:03,694 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:48:03,694 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:49:12,463 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:49:12,465 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:49:12,466 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:49:12,468 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:49:12,468 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:50:08,031 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:50:08,033 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:50:08,034 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:50:08,037 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:50:08,037 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:51:47,242 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:51:47,243 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:51:47,245 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:51:47,247 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:51:47,247 [Worker-828: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:51:52,959 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:51:52,961 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:51:52,962 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:51:52,964 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:51:52,964 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:52:05,004 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:52:05,005 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:52:05,007 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:52:05,009 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:52:05,009 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:52:22,711 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:52:22,713 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:52:22,714 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:52:22,715 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:52:22,715 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:56:11,888 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:56:11,890 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:56:11,892 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:56:11,894 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:56:11,894 [Worker-835: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 09:58:40,225 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:58:40,227 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 09:58:40,228 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 09:58:40,230 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 09:58:40,230 [Worker-818: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 10:14:13,996 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 10:14:13,997 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 10:14:13,998 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 10:14:14,000 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 10:14:14,000 [Worker-822: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\src\test\resources
+2019-01-28 14:25:42,584 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:42,585 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:42,586 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:42,588 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:42,588 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\src\test\resources
+2019-01-28 14:25:45,887 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:45,890 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 14:25:45,923 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:45,927 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:45,927 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\config-service\src\test\resources
+2019-01-28 14:25:48,528 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:48,529 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:48,529 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 14:25:48,533 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:48,533 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\eureka-service\src\test\resources
+2019-01-28 14:25:49,886 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:49,888 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:49,889 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 14:25:49,892 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:49,893 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\transaction-service\src\test\resources
+2019-01-28 14:25:49,996 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:49,997 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:49,998 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:50,001 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:50,001 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\website-service\src\test\resources
+2019-01-28 14:25:51,485 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:51,486 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 14:25:51,521 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 14:25:51,523 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 14:25:51,524 [Worker-908: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\zuul-proxy\src\test\resources
+2019-01-28 18:01:39,234 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-01-28 18:04:51,203 [Worker-6: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mm.account:account-service:0.0.1-SNAPSHOT @ C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\pom.xml.
+2019-01-28 18:04:52,919 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 18:04:52,924 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-28 18:04:52,926 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-01-28 18:04:52,935 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-28 18:04:52,935 [Worker-6: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\src\test\resources
+2019-01-29 17:09:14,563 [Worker-203: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.mm.account:account-service:0.0.1-SNAPSHOT @ C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\pom.xml.
+2019-01-29 17:09:17,956 [Worker-203: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-29 17:09:17,961 [Worker-203: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-29 17:09:17,961 [Worker-203: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-01-29 17:09:17,963 [Worker-203: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-01-29 17:09:17,963 [Worker-203: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Shubham\Spring-boot-workspaces\spring-breaker-mmbank\account-service\src\test\resources

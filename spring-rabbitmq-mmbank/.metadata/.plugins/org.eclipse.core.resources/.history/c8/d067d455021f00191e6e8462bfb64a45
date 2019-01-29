@@ -1,0 +1,8 @@
+package com.mm.transaction.transactionservice.repository
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.mm.transaction.transactionservice.entity.Transaction;
+
+public interface TransactionRepository extends JpaRepository<Transaction, Integer> {
+
+}

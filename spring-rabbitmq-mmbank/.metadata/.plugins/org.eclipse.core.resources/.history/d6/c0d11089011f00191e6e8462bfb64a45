@@ -1,0 +1,5 @@
+package com.mm.transaction.transactionservice.resource;
+
+public class TransactionResource {
+
+}

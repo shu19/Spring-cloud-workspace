@@ -1,0 +1,176 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for ChunkPool::allocate
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:273), pid=37256, tid=0x0000000000005430
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_121-b13) (build 1.8.0_121-b13)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.121-b13 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002a84000):  JavaThread "main" [_thread_in_vm, id=21552, stack(0x0000000002980000,0x0000000002a80000)]
+
+Stack: [0x0000000002980000,0x0000000002a80000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000177b3800 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=38148, stack(0x00000000193f0000,0x00000000194f0000)]
+  0x00000000177a8800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=31480, stack(0x0000000018ef0000,0x0000000018ff0000)]
+  0x00000000177a2800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=34364, stack(0x0000000018df0000,0x0000000018ef0000)]
+  0x00000000177a1800 JavaThread "Attach Listener" daemon [_thread_blocked, id=38560, stack(0x0000000018cf0000,0x0000000018df0000)]
+  0x00000000177a0800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=37000, stack(0x0000000018bf0000,0x0000000018cf0000)]
+  0x000000001778a000 JavaThread "Finalizer" daemon [_thread_blocked, id=30604, stack(0x0000000018a00000,0x0000000018b00000)]
+  0x0000000017768800 JavaThread "Reference Handler" daemon [_thread_blocked, id=33612, stack(0x0000000018900000,0x0000000018a00000)]
+=>0x0000000002a84000 JavaThread "main" [_thread_in_vm, id=21552, stack(0x0000000002980000,0x0000000002a80000)]
+
+Other Threads:
+  0x0000000017767000 VMThread [stack: 0x0000000018800000,0x0000000018900000] [id=32900]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 665K [0x00000000d5580000, 0x00000000d8000000, 0x0000000100000000)
+  eden space 33280K, 2% used [0x00000000d5580000,0x00000000d5626670,0x00000000d7600000)
+  from space 5120K, 0% used [0x00000000d7b00000,0x00000000d7b00000,0x00000000d8000000)
+  to   space 5120K, 0% used [0x00000000d7600000,0x00000000d7600000,0x00000000d7b00000)
+ ParOldGen       total 87552K, used 0K [0x0000000080000000, 0x0000000085580000, 0x00000000d5580000)
+  object space 87552K, 0% used [0x0000000080000000,0x0000000080000000,0x0000000085580000)
+ Metaspace       used 2025K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 228K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x0000000011f40000,0x0000000012350000] byte_map_base: 0x0000000011b40000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000069a4b6d0
+ Begin Bits: [0x0000000012a00000, 0x0000000014a00000)
+ End Bits:   [0x0000000014a00000, 0x0000000016a00000)
+
+Polling page: 0x00000000028d0000
+
+CodeCache: size=245760Kb used=1021Kb max_used=1032Kb free=244738Kb
+ bounds [0x0000000002b80000, 0x0000000002df0000, 0x0000000011b80000]
+ total_blobs=209 nmethods=0 adapters=125
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (2 events):
+Event: 0.051 Thread 0x0000000002a84000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000d5587ca8) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\
+Event: 0.052 Thread 0x0000000002a84000 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000d5587f90) thrown at [C:\re\workspace\8-2-build-windows-amd64-cygwin\jdk8u121\8372\hotspot\src\share\vm\prims
+
+Events (10 events):
+Event: 0.098 loading class sun/net/www/protocol/jar/Handler done
+Event: 0.099 loading class sun/misc/Launcher$AppClassLoader$1
+Event: 0.099 loading class sun/misc/Launcher$AppClassLoader$1 done
+Event: 0.161 loading class java/lang/SystemClassLoaderAction
+Event: 0.161 loading class java/lang/SystemClassLoaderAction done
+Event: 0.161 Thread 0x00000000177a0800 Thread added: 0x00000000177a0800
+Event: 0.161 Thread 0x00000000177a1800 Thread added: 0x00000000177a1800
+Event: 0.162 Thread 0x00000000177a2800 Thread added: 0x00000000177a2800
+Event: 0.162 Thread 0x00000000177a8800 Thread added: 0x00000000177a8800
+Event: 0.162 Thread 0x00000000177b3800 Thread added: 0x00000000177b3800
+
+
+Dynamic libraries:
+0x00007ff7d8d00000 - 0x00007ff7d8d37000 	C:\Program Files\Java\jre1.8.0_121\bin\javaw.exe
+0x00007ffdf33c0000 - 0x00007ffdf35a1000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffdf28a0000 - 0x00007ffdf2952000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffdf04f0000 - 0x00007ffdf0763000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffdf32e0000 - 0x00007ffdf3381000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffdf2960000 - 0x00007ffdf29fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffdf1ee0000 - 0x00007ffdf1f3b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffdf1fe0000 - 0x00007ffdf2104000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffdf26a0000 - 0x00007ffdf2830000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffdf0240000 - 0x00007ffdf0260000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffdf09f0000 - 0x00007ffdf0a18000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffdf0300000 - 0x00007ffdf0492000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffdf0260000 - 0x00007ffdf02ff000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffdf0140000 - 0x00007ffdf023a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffded910000 - 0x00007ffdedb79000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.17134.228_none_fb4599993062b194\COMCTL32.dll
+0x00007ffdf2f50000 - 0x00007ffdf3273000 	C:\WINDOWS\System32\combase.dll
+0x00007ffdf07d0000 - 0x00007ffdf084a000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffdf22e0000 - 0x00007ffdf230d000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffdef570000 - 0x00007ffdef5cd000 	C:\Program Files\Citrix\System32\MfApHook64.dll
+0x00007ffdeec60000 - 0x00007ffdeec8b000 	C:\Program Files\Citrix\ICAService\CtxDodHook64.dll
+0x00007ffdef490000 - 0x00007ffdef4c2000 	C:\Program Files\Citrix\ICAService\picaFullScreenHookX64.dll
+0x00007ffdeee80000 - 0x00007ffdeeece000 	C:\Program Files\Citrix\ICAService\ShellHook64.dll
+0x00007ffdf0a20000 - 0x00007ffdf1e60000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffdf04a0000 - 0x00007ffdf04e9000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffdf25f0000 - 0x00007ffdf2699000 	C:\WINDOWS\System32\shcore.dll
+0x00007ffdef790000 - 0x00007ffdefe9d000 	C:\WINDOWS\System32\windows.storage.dll
+0x00007ffdf3280000 - 0x00007ffdf32d1000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffdef720000 - 0x00007ffdef731000 	C:\WINDOWS\System32\kernel.appcore.dll
+0x00007ffdef750000 - 0x00007ffdef76f000 	C:\WINDOWS\System32\profapi.dll
+0x00007ffdef6d0000 - 0x00007ffdef71c000 	C:\WINDOWS\System32\powrprof.dll
+0x00007ffdef740000 - 0x00007ffdef74a000 	C:\WINDOWS\System32\FLTLIB.DLL
+0x00007ffdeed00000 - 0x00007ffdeee7c000 	C:\Program Files\Citrix\ICAService\SCardHook64.dll
+0x00007ffdee9d0000 - 0x00007ffdee9fa000 	C:\Program Files\Citrix\ICAService\cxinjime64.dll
+0x00007ffdee980000 - 0x00007ffdee9c8000 	C:\Program Files\Citrix\ICAService\PicaWtsHook64.dll
+0x0000000069150000 - 0x0000000069222000 	C:\Program Files\Java\jre1.8.0_121\bin\msvcr100.dll
+0x0000000069230000 - 0x0000000069acb000 	C:\Program Files\Java\jre1.8.0_121\bin\server\jvm.dll
+0x00007ffdf2a00000 - 0x00007ffdf2a08000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffde9a90000 - 0x00007ffde9ab3000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffdeef90000 - 0x00007ffdeef9a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffde9a60000 - 0x00007ffde9a8a000 	C:\WINDOWS\SYSTEM32\winmmbase.dll
+0x00007ffddf6d0000 - 0x00007ffddf6d9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x0000000002840000 - 0x00000000028ac000 	C:\WINDOWS\System32\ws2_32.DLL
+0x000000006a510000 - 0x000000006a51f000 	C:\Program Files\Java\jre1.8.0_121\bin\verify.dll
+0x000000006a010000 - 0x000000006a039000 	C:\Program Files\Java\jre1.8.0_121\bin\java.dll
+0x000000006a4f0000 - 0x000000006a506000 	C:\Program Files\Java\jre1.8.0_121\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=54380 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Djava.rmi.server.hostname=localhost -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -Xverify:none -XX:TieredStopAtLevel=1 -Dfile.encoding=UTF-8 
+java_command: com.cg.messaging.rabbitmqsender.RabbitmqSenderApplication --spring.output.ansi.enabled=always
+java_class_path (initial): C:\Shubham\Spring-boot-workspaces\spring-messaging-rabbitmq\rabbitmq-sender\target\classes;C:\Users\shuraut\.m2\repository\org\springframework\boot\spring-boot-starter-amqp\2.1.2.RELEASE\spring-boot-starter-amqp-2.1.2.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\boot\spring-boot-starter\2.1.2.RELEASE\spring-boot-starter-2.1.2.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\boot\spring-boot\2.1.2.RELEASE\spring-boot-2.1.2.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\2.1.2.RELEASE\spring-boot-autoconfigure-2.1.2.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\boot\spring-boot-starter-logging\2.1.2.RELEASE\spring-boot-starter-logging-2.1.2.RELEASE.jar;C:\Users\shuraut\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\shuraut\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\shuraut\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.11.1\log4j-to-slf4j-2.11.1.jar;C:\Users\shuraut\.m2\repository\org\apache\logging\log4j\log4j-api\2.11.1\log4j-api-2.11.1.jar;C:\Users\shuraut\.m2\repository\org\slf4j\jul-to-slf4j\1.7.25\jul-to-slf4j-1.7.25.jar;C:\Users\shuraut\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\shuraut\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23.jar;C:\Users\shuraut\.m2\repository\org\springframework\spring-messaging\5.1.4.RELEASE\spring-messaging-5.1.4.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\spring-beans\5.1.4.RELEASE\spring-beans-5.1.4.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\amqp\spring-rabbit\2.1.3.RELEASE\spring-rabbit-2.1.3.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\amqp\spring-amqp\2.1.3.RELEASE\spring-amqp-2.1.3.RELEASE.jar;C:\Users\shuraut\.m2\repository\org\springframework\retry\spring-retry\1.2.3.RELEASE\spring-retry-1.2.3
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.8.0_121/bin/server;C:/Program Files/Java/jre1.8.0_121/bin;C:/Program Files/Java/jre1.8.0_121/lib/amd64;C:\Python34\;C:\Python34\Scripts;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\Citrix\System32\;C:\Program Files\Citrix\ICAService\;C:\WINDOWS\System32\OpenSSH\;C:\Users\shuraut\AppData\Local\Microsoft\WindowsApps;;C:\SOFTWARES\spring-tool-suite-3.9.7.RELEASE-e4.10.0-win32-x86_64\sts-bundle\sts-3.9.7.RELEASE;
+USERNAME=shuraut
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 15 Model 6 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 17134 (10.0.17134.1)
+
+CPU:total 4 (2 cores per cpu, 1 threads per core) family 15 model 6 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, rtm, 3dnowpref, lzcnt, tsc, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8388056k(809984k free), swap 18697820k(2420k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.121-b13) for windows-amd64 JRE (1.8.0_121-b13), built on Dec 12 2016 18:21:36 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Jan 29 15:32:45 2019
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

@@ -1,0 +1,22 @@
+package com.mm.account.accountservice.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+
+import com.mm.account.accountservice.entity.Account;
+import com.mm.account.accountservice.repository.AccountRepository;
+
+public class AccountServiceImpl implements AccountService{
+
+	@Autowired
+	private AccountRepository repository;
+	
+	@Override
+	public ResponseEntity<List<Account>> getAllAccounts() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

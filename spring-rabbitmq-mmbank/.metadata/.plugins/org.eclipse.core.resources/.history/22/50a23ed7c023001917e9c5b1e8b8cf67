@@ -1,0 +1,117 @@
+package com.mm.transaction.transactionservice.resource;
+
+import java.util.List;
+
+import org.springframework.amqp.rabbit.core.RabbitMessagingTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import com.mm.transaction.transactionservice.dataset.DataSet;
+import com.mm.transaction.transactionservice.entity.Transaction;
+import com.mm.transaction.transactionservice.service.TransactionService;
+
+@RestController
+@RequestMapping("/transactions")
+public class TransactionResource {
+
+	@Autowired
+	private RestTemplate restTemplate;
+
+	@Autowired
+	private TransactionService service;
+
+	@Autowired
+	private RabbitMessagingTemplate messagingTemplate;
+	
+	@PostMapping("/deposit")
+	public ResponseEntity<Transaction> deposit(@RequestBody Transaction transaction) {
+		ResponseEntity<Double> entity = restTemplate.getForEntity(
+				"http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "/balance", Double.class);
+		Double currentBalance = entity.getBody();
+		Double updateBalance = service.deposit(transaction.getAccountNumber(), transaction.getTransactionDetails(),
+				currentBalance, transaction.getAmount());
+		restTemplate.put("http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "?balance="
+				+ transaction.getAmount(), null);
+		
+		messagingTemplate.convertAndSend("AccountUpdates", payload);
+		return new ResponseEntity<>(HttpStatus.CREATED);
+
+	}
+
+	@PostMapping("/withdraw")
+	public ResponseEntity<Transaction> withdraw(@RequestBody Transaction transaction) {
+		ResponseEntity<Double> entity = restTemplate.getForEntity(
+				"http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "/balance", Double.class);
+		Double currentBalance = entity.getBody();
+		service.withdraw(transaction.getAccountNumber(), transaction.getTransactionDetails(), currentBalance,
+				transaction.getAmount());
+		restTemplate.put("http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "?balance="
+				+ -transaction.getAmount(), null);
+		return new ResponseEntity<>(HttpStatus.CREATED);
+
+	}
+
+	@PostMapping("/fundTransfer")
+	public ResponseEntity<Transaction> fundtransfer(@RequestParam("sender") Integer senderAccountNumber,
+			@RequestParam("receiver") Integer receiverAccountNumber, @RequestParam("amount") Double amount) {
+
+		ResponseEntity<Double> senderEntity = restTemplate
+				.getForEntity("http://ACCOUNT-SERVICE/accounts/" + senderAccountNumber + "/balance", Double.class);
+		Double senderBalance = senderEntity.getBody();
+
+		ResponseEntity<Double> receiverEntity = restTemplate
+				.getForEntity("http://ACCOUNT-SERVICE/accounts/" + receiverAccountNumber + "/balance", Double.class);
+		Double receiverBalance = receiverEntity.getBody();
+
+		service.withdraw(senderAccountNumber, "Fund Transfer to "+receiverAccountNumber, senderBalance, amount);
+		service.deposit(receiverAccountNumber, "Fund Transfer from "+senderAccountNumber, receiverBalance, amount);
+		restTemplate.put("http://ACCOUNT-SERVICE/accounts/" + senderAccountNumber + "?balance=" + -amount, null);
+		restTemplate.put("http://ACCOUNT-SERVICE/accounts/" + receiverAccountNumber + "?balance=" + amount, null);
+
+		return new ResponseEntity<>(HttpStatus.CREATED);
+	}
+
+	/*
+	 * @GetMapping public DataSet getStatement(@RequestParam("offset") int
+	 * offset, @RequestParam("size") int size) {
+	 * 
+	 * int currentSize = size == 0 ? 5 : size; int currentOffset = offset == 0 ? 1 :
+	 * offset;
+	 * 
+	 * Link previous = linkTo(
+	 * methodOn(TransactionResource.class).getStatement(currentOffset - currentSize,
+	 * currentSize)) .withRel("previous"); Link next =
+	 * linkTo(methodOn(TransactionResource.class).getStatement(currentOffset +
+	 * currentSize, currentSize)) .withRel("next");
+	 * 
+	 * List<Transaction> transactions = service.getStatement(); List<Transaction>
+	 * currentDataSet = new ArrayList<Transaction>();
+	 * 
+	 * for (int i = currentOffset; i < currentOffset + currentSize; i++) {
+	 * Transaction transaction = transactions.get(i);
+	 * currentDataSet.add(transaction); }
+	 * 
+	 * System.out.println(currentDataSet); DataSet dataSet = new
+	 * DataSet(currentDataSet, next, previous);
+	 * 
+	 * return dataSet; }
+	 * 
+	 */
+
+	@GetMapping
+	public ResponseEntity<DataSet> getStatement(){
+		DataSet currentDataSet =new DataSet();
+		List<Transaction> transactions = service.getStatement();
+		currentDataSet.setTransaction(transactions);
+		return new ResponseEntity<>(currentDataSet, HttpStatus.OK);
+	}
+
+}

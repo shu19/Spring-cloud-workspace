@@ -1,0 +1,5 @@
+package com.mm.account.accountservice.resource;
+
+public class AccountResource {
+
+}

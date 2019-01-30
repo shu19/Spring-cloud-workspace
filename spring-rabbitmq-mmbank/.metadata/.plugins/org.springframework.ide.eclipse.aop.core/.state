@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="zuul-proxy"/>
-<aop-project name="account-service"/>
 <aop-project name="eureka-service"/>
+<aop-project name="account-service"/>
 <aop-project name="config-service"/>
-<aop-project name="transaction-service"/>
 <aop-project name="website-service"/>
+<aop-project name="transaction-service"/>
 </aop-reference-model>

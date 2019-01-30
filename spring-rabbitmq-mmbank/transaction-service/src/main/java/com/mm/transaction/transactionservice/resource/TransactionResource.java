@@ -35,9 +35,10 @@ public class TransactionResource {
 	
 	@PostMapping("/deposit")
 	public ResponseEntity<Transaction> deposit(@RequestBody Transaction transaction) {
-		ResponseEntity<Double> entity = restTemplate.getForEntity(
-				"http://localhost:8762/accounts/" + transaction.getAccountNumber() + "/balance", Double.class);
-		Double currentBalance = entity.getBody();
+//		ResponseEntity<Double> entity = restTemplate.getForEntity(
+//				"http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "/balance", Double.class);
+//		Double currentBalance = entity.getBody();
+		Double currentBalance = 1500.00;
 		Double updateBalance = service.deposit(transaction.getAccountNumber(), transaction.getTransactionDetails(),
 				currentBalance, transaction.getAmount());
 //		restTemplate.put("http://ACCOUNT-SERVICE/accounts/" + transaction.getAccountNumber() + "?balance="
